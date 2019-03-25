@@ -11,5 +11,8 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-   .sass('resources/sass/app.scss', 'public/css');
+const {MIX_PACKAGE, NPM, VENDOR, OUTPUT, output} = require('laravel-mix-branches');
+
+branchesPath = `${__dirname}/modules/`;
+
+require(`${branchesPath}/${MIX_PACKAGE}/webpack.mix.js`);

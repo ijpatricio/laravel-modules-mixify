@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f19716d5e9e20b214aa4498cddf6c9b0",
+    "content-hash": "916a9043ad126f72621bf7514c111c2e",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -3590,6 +3590,30 @@
                 "testing"
             ],
             "time": "2019-02-13T09:37:52+00:00"
+        },
+        {
+            "name": "modules/shop",
+            "version": "dev-develop",
+            "dist": {
+                "type": "path",
+                "url": "modules/Shop",
+                "reference": "b4c9adc9358f1831b262de6188146dd096f0fdc3",
+                "shasum": null
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Modules\\Shop\\Providers\\ShopServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Modules\\Shop\\": "src/"
+                }
+            }
         },
         {
             "name": "myclabs/deep-copy",
