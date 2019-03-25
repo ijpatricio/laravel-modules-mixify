@@ -1,0 +1,19 @@
+{
+    "name": "modules/tasks",
+    "description": "",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Tasks\\Providers\\TasksServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Tasks\\": "src/"
+        }
+    }
+}

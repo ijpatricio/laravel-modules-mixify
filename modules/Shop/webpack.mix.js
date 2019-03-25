@@ -9,4 +9,5 @@ mix.setPublicPath(`${appPublicPath}/modules/${appModule}`);
 mix.version();
 
 mix
-    .js(__dirname + '/resources/js/app.js', 'js/index.js')
+    .js(__dirname + '/resources/js/index.js', 'js/index.js')
+    .sass(__dirname + '/resources/sass/app.scss', 'css')

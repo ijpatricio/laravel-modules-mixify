@@ -48278,43 +48278,6 @@ if (false) {} else {
 
 /***/ }),
 
-/***/ "./modules/Shop/resources/js/app.js":
-/*!******************************************!*\
-  !*** ./modules/Shop/resources/js/app.js ***!
-  \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
-__webpack_require__(/*! ./bootstrap */ "./modules/Shop/resources/js/bootstrap.js");
-
-window.Vue = __webpack_require__(/*! vue */ "./modules/Shop/node_modules/vue/dist/vue.common.js");
-/**
- * The following block of code may be used to automatically register your
- * Vue components. It will recursively scan this directory for the Vue
- * components and automatically register them with their "basename".
- *
- * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
- */
-// const files = require.context('./', true, /\.vue$/i);
-// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
-
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
-
-var app = new Vue({
-  el: '#app'
-});
-
-/***/ }),
-
 /***/ "./modules/Shop/resources/js/bootstrap.js":
 /*!************************************************!*\
   !*** ./modules/Shop/resources/js/bootstrap.js ***!
@@ -48370,6 +48333,54 @@ if (token) {
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     encrypted: true
 // });
+
+/***/ }),
+
+/***/ "./modules/Shop/resources/js/index.js":
+/*!********************************************!*\
+  !*** ./modules/Shop/resources/js/index.js ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * First we will load all of this project's JavaScript dependencies which
+ * includes Vue and other libraries. It is a great starting point when
+ * building robust, powerful web applications using Vue and Laravel.
+ */
+__webpack_require__(/*! ./bootstrap */ "./modules/Shop/resources/js/bootstrap.js");
+
+window.Vue = __webpack_require__(/*! vue */ "./modules/Shop/node_modules/vue/dist/vue.common.js");
+/**
+ * The following block of code may be used to automatically register your
+ * Vue components. It will recursively scan this directory for the Vue
+ * components and automatically register them with their "basename".
+ *
+ * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
+ */
+// const files = require.context('./', true, /\.vue$/i);
+// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
+
+/**
+ * Next, we will create a fresh Vue application instance and attach it to
+ * the page. Then, you may begin adding components to this application
+ * or customize the JavaScript scaffolding to fit your unique needs.
+ */
+
+var app = new Vue({
+  el: '#app'
+});
+
+/***/ }),
+
+/***/ "./modules/Shop/resources/sass/app.scss":
+/*!**********************************************!*\
+  !*** ./modules/Shop/resources/sass/app.scss ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -48906,13 +48917,14 @@ module.exports = function(module) {
 /***/ }),
 
 /***/ 0:
-/*!************************************************!*\
-  !*** multi ./modules/Shop/resources/js/app.js ***!
-  \************************************************/
+/*!*****************************************************************************************!*\
+  !*** multi ./modules/Shop/resources/js/index.js ./modules/Shop/resources/sass/app.scss ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/joaopatricio/code/cursor/laravel-modules-mixify/modules/Shop/resources/js/app.js */"./modules/Shop/resources/js/app.js");
+__webpack_require__(/*! /Users/joaopatricio/code/cursor/laravel-modules-mixify/modules/Shop/resources/js/index.js */"./modules/Shop/resources/js/index.js");
+module.exports = __webpack_require__(/*! /Users/joaopatricio/code/cursor/laravel-modules-mixify/modules/Shop/resources/sass/app.scss */"./modules/Shop/resources/sass/app.scss");
 
 
 /***/ })
